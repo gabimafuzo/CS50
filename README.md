@@ -1,1 +1,1 @@
-Esses são alguns dos projetos do curso CS50.
+These are some of the projects from the CS50 course.
