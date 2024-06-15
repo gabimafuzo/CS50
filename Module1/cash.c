@@ -37,12 +37,12 @@ int countChangeCoins(float n)
             n = n - 25;
             coins++;
         }
-        else if (n < 25 && n >= 10)
+        else if (n >= 10)
         {
             n = n - 10;
             coins++;
         }
-        else if (n < 10 && n >= 5)
+        else if (n >= 5)
         {
             n = n - 5;
             coins++;
