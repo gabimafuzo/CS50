@@ -27,7 +27,7 @@ int main()
             xsum += digits;
 
             //Sum of the digits that were not multiplied by 2 (y).
-            y = number % 10; //soma dos outros
+            y = number % 10;
             ysum += y;
 
 
