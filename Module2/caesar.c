@@ -35,13 +35,13 @@ int main(int argc, string argv[])
         {
             if (islower(plaintext[i]))
             {
-                char ciphercaracter = ((plaintext[i] - 'a' + key) % 26) + 'a'; // Caesar cipher character encryption formula
-                ciphertext[i] = ciphercaracter;
+                char ciphercharacter = ((plaintext[i] - 'a' + key) % 26) + 'a'; // Caesar cipher character encryption formula
+                ciphertext[i] = ciphercharacter;
             }
             else
             {
-                char ciphercaracter = ((plaintext[i] - 'A' + key) % 26) + 'A';
-                ciphertext[i] = ciphercaracter;
+                char ciphercharacter = ((plaintext[i] - 'A' + key) % 26) + 'A';
+                ciphertext[i] = ciphercharacter;
             }
         }
         else
