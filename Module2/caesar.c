@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc != 2) // requires only two arguments
+    if (argc != 2) // Requires only two arguments
     {
         printf("Usage: ./caesar key\n");
         return 1;
@@ -27,7 +27,7 @@ int main(int argc, string argv[])
 
     int n = strlen(plaintext);
 
-    char ciphertext[n + 1]; // n + 1 characters to accommodate the null terminator \0 at the end of the string
+    char ciphertext[n];
 
     for (int i = 0; i < n; i++)
     {
