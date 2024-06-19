@@ -9,7 +9,7 @@ int main()
 
     float letters = 0, words = 1, sentences = 0, n = strlen(text);
 
-    for (int i = 0; i < n; i++) //letters count, word count, and phrase count based on ASCII-classified characters.
+    for (int i = 0; i < n; i++) // Letters count, word count, and phrase count based on ASCII-classified characters.
     {
         if ((text[i] >= 65 && text[i] <= 90) || (text[i] >= 97 && text[i] <= 122))
         {
