@@ -25,11 +25,11 @@ int main(int argc, string argv[])
 
     string plaintext = get_string("plaintext: ");
 
-    int n = strlen(plaintext);
+    int size_plaintext = strlen(plaintext);
 
-    char ciphertext[n];
+    char ciphertext[size_plaintext];
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < size_plaintext; i++)
     {
         if (isalpha(plaintext[i]))
         {
@@ -50,7 +50,7 @@ int main(int argc, string argv[])
         }
     }
 
-    ciphertext[n] = '\0';  // Null-terminate the string
+    ciphertext[size_plaintext] = '\0';  // Null-terminate the string
 
     printf("ciphertext: %s\n", ciphertext);
 }
