@@ -4,14 +4,14 @@
 int main()
 {
     int height;
-    //Ask the height to the user until the condition is satisfied
+    // Ask the height to the user until the condition is satisfied
     do
     {
         height = get_int("height: ");
     }
     while (height < 1 || height > 8);
 
-    //Build the pyramid
+    // Build the pyramid
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < height - 1 - i; j++)
