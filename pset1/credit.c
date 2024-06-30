@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include <cs50.h>
-
+#include <stdio.h>
 
 string detectCardType(long n);
 
@@ -18,26 +17,26 @@ int main()
         {
             number = number / 10;
         }
-        else //Access the digits at even positions.
+        else // Access the digits at even positions.
         {
-            // Step: Multiply every second digit by 2, starting with the second-to-last digit of the number (x), then sum the digits of these products
+            // Step: Multiply every second digit by 2, starting with the second-to-last digit of the
+            // number (x), then sum the digits of these products
             x = number % 100 / 10;
             x = 2 * x;
             digits = x % 10 + x % 100 / 10;
             xsum += digits;
 
-            //Sum of the digits that were not multiplied by 2 (y).
+            // Sum of the digits that were not multiplied by 2 (y).
             y = number % 10;
             ysum += y;
-
 
             number = number / 10;
         }
         i++;
-
     }
 
-    if ((ysum + xsum) % 10) // If the result of (ysum + xsum) modulo 10 is not equal to 0, this condition is true
+    if ((ysum + xsum) %
+        10) // If the result of (ysum + xsum) modulo 10 is not equal to 0, this condition is true
     {
         printf("INVALID\n");
     }
@@ -52,10 +51,10 @@ string detectCardType(long n)
 {
     int j = 2;
     string cardType;
-    while (n >= 100) //To access only the first two digits of the card
+    while (n >= 100) // To access only the first two digits of the card
     {
         n = n / 10;
-        j++; //Digit counter (correction factor of 2)
+        j++; // Digit counter (correction factor of 2)
     }
     if (j == 15 && (n == 34 || n == 37))
     {
