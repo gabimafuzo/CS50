@@ -15,8 +15,7 @@ typedef struct
     string name;
     int votes;
     bool eliminated;
-}
-candidate;
+} candidate;
 
 // Array of candidates
 candidate candidates[MAX_CANDIDATES];
@@ -137,7 +136,6 @@ bool vote(int voter, int rank, string name)
         }
     }
     return false;
-
 }
 
 // Tabulate votes for non-eliminated candidates
