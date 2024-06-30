@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <cs50.h>
-#include <string.h>
 #include <math.h>
+#include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -9,7 +9,8 @@ int main()
 
     float letters = 0, words = 1, sentences = 0, n = strlen(text);
 
-    for (int i = 0; i < n; i++) // Letters count, word count, and phrase count based on ASCII-classified characters.
+    for (int i = 0; i < n;
+         i++) // Letters count, word count, and phrase count based on ASCII-classified characters.
     {
         if ((text[i] >= 65 && text[i] <= 90) || (text[i] >= 97 && text[i] <= 122))
         {
@@ -26,7 +27,8 @@ int main()
     }
 
     // Coleman-Liau index
-    // Here, L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text.
+    // Here, L is the average number of letters per 100 words in the text, and S is the average
+    // number of sentences per 100 words in the text.
     float L = (letters * 100) / words;
     float S = (sentences * 100) / words;
 
