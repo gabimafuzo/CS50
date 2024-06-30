@@ -1,32 +1,30 @@
-#include <stdio.h>
 #include <cs50.h>
 #include <math.h>
+#include <stdio.h>
 
-int countChangeCoins(float n);
+int countChangeCoins(int n);
 int main()
 {
-    float change;
-    //Ask the change to the user until the condition is satisfied
+    int change;
+    // Ask the change to the user until the condition is satisfied
     do
     {
         change = get_float("Change Owed: ");
     }
     while (change <= 0);
 
-
     // Rounding the decimals and *100
-    change = round(change * 100);
+    change = round(change);
 
-    //Calling the function that calculates the number of coins
+    // Calling the function that calculates the number of coins
     int coins = countChangeCoins(change);
 
     printf("%i\n", coins);
 
     return 0;
-
 }
 
-int countChangeCoins(float n)
+int countChangeCoins(int n)
 {
     int coins = 0;
 
