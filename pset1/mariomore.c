@@ -4,7 +4,7 @@
 int main()
 {
     int height;
-    //Ask the height to the user until the condition is satisfied
+    // Ask the height to the user until the condition is satisfied
     do
     {
         height = get_int("height: ");
@@ -13,7 +13,7 @@ int main()
 
     for (int i = 0; i < height; i++)
     {
-        //Print the first pyramid
+        // Print the first pyramid
         for (int j = 0; j < height - 1 - i; j++)
         {
             printf(" ");
@@ -24,10 +24,10 @@ int main()
             printf("#");
         }
 
-        //Print middle spaces of the pyramid
+        // Print middle spaces of the pyramid
         printf("  ");
 
-        //Print second pyramid
+        // Print second pyramid
         for (int z = 0; z < i + 1; z++)
         {
             printf("#");
