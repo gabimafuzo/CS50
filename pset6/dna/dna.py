@@ -1,7 +1,6 @@
 import sys
 import csv
 
-
 def main():
 
     # Check for command-line usage
@@ -31,14 +30,14 @@ def main():
     # Check database for matching profiles
     matched_person = None
     for person in database:
-        is_match = True
+        match = True
         for str in strs:
             if (int(person[str]) != str_counts[str]):
-                is_match = False
+                match = False
                 break  # Not a match, so exit the inner loop
-        if is_match:
+        if match:
             matched_person = person['name']
-            break  # It's a match, so exit the outer loop
+            break  # Exit the outer loop
 
     if matched_person:
         print(matched_person)
